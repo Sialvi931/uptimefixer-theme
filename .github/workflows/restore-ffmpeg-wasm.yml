@@ -38,3 +38,5 @@ jobs:
             git commit -m "Restore pinned FFmpeg WASM asset"
             git push
           fi
+
+# Keeps the large pinned browser runtime reproducible in the public repository.
