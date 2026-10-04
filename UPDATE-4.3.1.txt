@@ -1,0 +1,10 @@
+UPDATE 4.3.1 — 26 September 2026
+
+Install this ZIP using Appearance > Themes > Add New > Upload Theme, then replace the existing alltools theme. Clear WordPress/CDN/browser caches afterward. Keep plugin 2.4.1 active. No database reset or reimport is needed.
+
+Fix: both media loaders now use the bundled single-thread engine. SharedArrayBuffer and COOP/COEP headers are not required. Engine files are served from your own theme directory; first use downloads approximately 25 MB.
+MP3 cutter now encodes MP3 instead of copying incompatible input codecs. Video trimmer exports MP4 and MP3 cutter exports MP3 through the repaired engine. Existing trimming controls remain. Stale output is overwritten on retries.
+
+Verified locally: 346 tool renderers and JavaScript initialization; 11 selected functional checks including calculators, JSON, text, navigation and file selection; 20 media export cases with real sample inputs, validated with ffprobe; existing posts and Yoast metadata preservation. Desktop/mobile homepage overflow checks pass.
+
+Limits: media tests use short synthetic samples, not every codec, file size, device or setting. Third-party API tools require their configured services. Live website publishing, production server behavior and AdSense approval are not verified or guaranteed.

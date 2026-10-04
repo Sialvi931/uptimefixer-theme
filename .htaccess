@@ -1,0 +1,20 @@
+# Uptime Fixer theme hardening
+Options -Indexes
+
+# Block direct browser access to PHP files inside the theme folder.
+# WordPress can still include these files internally.
+<FilesMatch "\.(php|phtml|phar)$">
+    Require all denied
+</FilesMatch>
+
+<IfModule !mod_authz_core.c>
+<FilesMatch "\.(php|phtml|phar)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+</IfModule>
+
+# Keep static assets public.
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|ico|woff|woff2|ttf|eot|map)$">
+    Require all granted
+</FilesMatch>

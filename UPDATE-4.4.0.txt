@@ -1,0 +1,28 @@
+UPTIME FIXER THEME 4.4.0 - PERFORMANCE + YOAST SEO UPDATE
+
+SAFETY / PRESERVATION
+- No tool registry definitions were removed or renamed.
+- No tool implementation JavaScript was edited in this update.
+- Existing tool URLs, templates, visible content and processing engines are preserved.
+- Existing manually entered Yoast titles/descriptions are preserved.
+
+PERFORMANCE
+- Tool JavaScript is now loaded by the current tool group instead of cascading through every theme tool bundle.
+- Companion-plugin tool pages no longer pull the theme's large implementation bundles unnecessarily.
+- Studio controls no longer depend on the full extra-tools JavaScript bundle.
+- QR and font-editor assets load only on the tools that need them.
+- Existing critical CSS, image loading, font/preconnect and defer optimizations remain in place.
+
+YOAST SEO
+- Empty or previously theme-generated Yoast titles and descriptions are filled safely for all tool posts.
+- Focus keyphrases and breadcrumb titles are filled for tool posts where safe.
+- Normal pages receive title/description defaults; common pages (Home, About, Contact, Blog, Privacy, Terms and FAQs) have hand-written defaults.
+- Manual Yoast fields are never overwritten by the automatic sync.
+- The metadata sync runs one time after an administrator opens WordPress Admin with Yoast active.
+
+AFTER INSTALL
+1. Keep Yoast SEO active.
+2. Open WordPress Admin once to run the one-time safe metadata fill.
+3. Save Settings > Permalinks once.
+4. Purge WordPress/server/CDN/browser caches once.
+5. Test representative tools and rerun PageSpeed Insights, especially mobile.
