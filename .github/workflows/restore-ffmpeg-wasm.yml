@@ -1,0 +1,40 @@
+name: Restore FFmpeg WASM
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/restore-ffmpeg-wasm.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore pinned FFmpeg WASM
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/vendor/ffmpeg
+          curl -fsSL https://registry.npmjs.org/@ffmpeg/core-st/-/core-st-0.11.1.tgz -o /tmp/core-st.tgz
+          mkdir -p /tmp/core-st
+          tar -xzf /tmp/core-st.tgz -C /tmp/core-st
+          cp /tmp/core-st/package/dist/ffmpeg-core.wasm assets/vendor/ffmpeg/ffmpeg-core.wasm
+          test "$(sha256sum assets/vendor/ffmpeg/ffmpeg-core.wasm | awk '{print $1}')" = "68b094c2dd90d813d5c0894c991499e297479e6c2dcd7e9b4940b5a22eb62701"
+
+      - name: Commit vendored WASM
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git status --porcelain -- assets/vendor/ffmpeg/ffmpeg-core.wasm | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/vendor/ffmpeg/ffmpeg-core.wasm
+            git commit -m "Restore pinned FFmpeg WASM asset"
+            git push
+          fi
