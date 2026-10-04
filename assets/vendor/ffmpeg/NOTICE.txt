@@ -1,0 +1,4 @@
+Bundled unmodified packages: @ffmpeg/ffmpeg 0.11.6 and @ffmpeg/core-st 0.11.1.
+Wrapper license: see LICENSE.
+Upstream source and build instructions: https://github.com/ffmpegwasm/ffmpeg.wasm/tree/v0.11.6 and https://github.com/ffmpegwasm/ffmpeg.wasm-core
+FFmpeg and compiled codecs retain their respective upstream licenses.
