@@ -1,6 +1,6 @@
 # Uptime Fixer security notes
 
-Version 3.2.0 validates and rate-limits public diagnostics, rejects private and reserved network targets, limits permitted ports and response sizes, verifies TLS certificates, disables XML-RPC and the dashboard file editor, prevents public database writes, and sends restrictive browser security headers. PageSpeed reports are compacted before caching, sitemap DOCTYPE declarations are rejected, and browser dependency loads have bounded timeouts and retry-safe failure handling.
+Version 4.4.0 validates and rate-limits public diagnostics, rejects private and reserved network targets, limits permitted ports and response sizes, verifies TLS certificates, disables XML-RPC and the dashboard file editor, prevents public database writes, and sends restrictive browser security headers. PageSpeed reports are compacted before caching, sitemap DOCTYPE declarations are rejected, and browser dependency loads have bounded timeouts and retry-safe failure handling.
 
 OpenAI, DataForSEO and PageSpeed credentials are never sent to visitors. Values entered in Theme Settings are encrypted with keys derived from the site's WordPress authentication salt; wp-config.php constants can override stored values. Commercial endpoints have separate per-IP hourly limits and global daily limits to reduce abuse and unexpected provider charges.
 
