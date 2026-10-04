@@ -1,0 +1,27 @@
+Uptime Fixer theme 4.3.0
+
+INSTALL
+Appearance > Themes > Add New > Upload Theme.
+Upload this ZIP and choose Replace current with uploaded.
+Keep the Uptime Fixer tools plugin 2.4.1 active. Clear page/CDN cache afterwards.
+
+CHANGES
+Actual shared header and footer templates updated, keeping the existing logo.
+Header tool search, collections navigation, Guides and Explore Tools link.
+Footer brand headline and Tools/Resources/Company columns.
+Responsive tool layouts, dark result panels, reordered how-to/related/FAQ sections.
+Working word case/space controls, unit category selectors and swap.
+QR size and error correction controls; four-module quiet zone in PNG and SVG.
+Image compressor preserves source dimensions, offers before/after preview and download.
+Audio/video preview and trim controls. Audio waveform uses the uploaded file.
+Native audio trim export is WAV. Native video trim export is WebM and runs in
+real time in browsers supporting captureStream and MediaRecorder.
+Other existing tools retain their original processing engines and API requirements.
+Existing posts, Yoast metadata and schema/sitemap integration are retained.
+
+CHECKS
+All 346 tool renderers returned markup without PHP errors.
+Changed PHP files passed syntax parsing. Changed JS files passed syntax checks.
+End-to-end browser export and pixel-level visual checks remain unverified because
+the local Chromium runner crashes before opening a page. Hosting/API-dependent
+tools still require the site's existing credentials and server configuration.

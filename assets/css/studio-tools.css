@@ -1,0 +1,87 @@
+/* The homepage's ivory and cobalt language, carried through the real tools. */
+body.ufx-tool-page,body.ufx-tool-directory{--at-bg:#f8f7f3;--at-bg-alt:#f8f7f3;--at-bg-soft:#eef3fb;--at-card:#fff;--at-border:#dfe3e8;--at-border-soft:#e7eaed;--at-text:#101c33;--at-text-muted:#52637b;--at-primary:#2558f2;--at-primary-dark:#1644d9;--at-radius:12px;--at-font:Arial,Helvetica,sans-serif;background:var(--at-bg)}
+body.ufx-tool-page .at-header,body.ufx-tool-directory .at-header{background:var(--at-bg);border-bottom:1px solid var(--at-border);box-shadow:none}
+body.ufx-tool-page .at-header-inner,body.ufx-tool-directory .at-header-inner{min-height:78px}
+body.ufx-tool-page .at-main,body.ufx-tool-directory .at-main{background:var(--at-bg)}
+body.ufx-tool-page .at-container,body.ufx-tool-directory .at-container{max-width:1280px}
+body.ufx-tool-page a:focus-visible,body.ufx-tool-page button:focus-visible,body.ufx-tool-page input:focus-visible,body.ufx-tool-page textarea:focus-visible{outline:3px solid #2558f2;outline-offset:3px}
+.ufx-tool-title{padding:31px 0 26px;background:var(--at-bg)}
+.ufx-tool-breadcrumb{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:33px;font-size:12px;color:var(--at-text-muted)}
+.ufx-tool-breadcrumb a{color:var(--at-text-muted);text-decoration:none}.ufx-tool-breadcrumb a:hover{color:var(--at-primary)}
+.ufx-tool-breadcrumb>span[aria-hidden]{color:#94a3b8;font-size:18px;line-height:1}
+.ufx-tool-eyebrow{font-size:11px;font-weight:800;letter-spacing:1.35px;text-transform:uppercase;color:var(--at-primary);margin:0 0 12px}
+.ufx-tool-title h1{font-size:clamp(38px,4.7vw,63px);letter-spacing:-2.5px;line-height:1.08;margin:0 0 11px;font-weight:800;max-width:1040px}
+.ufx-tool-subtitle{font-size:16px;line-height:1.6;color:var(--at-text-muted);max-width:770px;margin:0}
+body.ufx-tool-page .at-tool-section{padding:0 0 35px;background:var(--at-bg)}
+body.ufx-tool-page .at-tool-section>.at-container>.at-tool-grid:first-child{align-items:stretch}
+body.ufx-tool-page .at-tool-grid{gap:18px}
+body.ufx-tool-page .at-tool-grid-2{grid-template-columns:minmax(0,1fr) minmax(0,1.08fr)}
+body.ufx-tool-page .at-tool-section .at-card{background:var(--at-card);border:1px solid var(--at-border);box-shadow:0 8px 25px rgba(16,28,51,.025);border-radius:12px;padding:27px;min-width:0}
+body.ufx-tool-page .at-tool-section .at-card h2{font-size:20px;letter-spacing:-.4px}
+body.ufx-tool-page .at-tool-section .at-card h3{font-size:18px;letter-spacing:-.25px}
+body.ufx-tool-page .at-tool-section .at-field{gap:8px;margin-bottom:14px}
+body.ufx-tool-page .at-tool-section .at-field label{font-size:13px;color:var(--at-text);font-weight:700}
+body.ufx-tool-page .at-tool-section .at-input,body.ufx-tool-page .at-tool-section .at-select,body.ufx-tool-page .at-tool-section .at-textarea{background:#fff;border:1px solid #cfd8e4;border-radius:7px;color:#101c33;font-size:15px;min-height:49px;box-shadow:none}
+body.ufx-tool-page .at-tool-section .at-textarea{min-height:170px;line-height:1.6}
+body.ufx-tool-page .at-tool-section .at-input:focus,body.ufx-tool-page .at-tool-section .at-textarea:focus,body.ufx-tool-page .at-tool-section .at-select:focus{border-color:var(--at-primary);box-shadow:0 0 0 3px rgba(37,88,242,.13)}
+body.ufx-tool-page .at-tool-section .at-btn-primary{background:#1258f9;border-color:#1258f9;color:#fff;border-radius:7px;font-weight:700;box-shadow:none;min-height:49px}
+body.ufx-tool-page .at-tool-section .at-btn-primary:hover{background:#0647db;border-color:#0647db}
+body.ufx-tool-page .at-tool-section .at-btn-outline{border-color:#cbd6e5;color:var(--at-text);background:#fff;border-radius:7px;min-height:43px}
+body.ufx-tool-page .at-tool-section .at-tabs{background:#f1f4f9;border-radius:7px;padding:4px}
+body.ufx-tool-page .at-tool-section .at-tab{border-radius:5px;min-height:39px}
+body.ufx-tool-page .at-tool-section .at-tab.is-active{background:#1258f9;color:#fff;box-shadow:none}
+body.ufx-tool-page .at-tool-section .at-upload-zone,body.ufx-tool-page .at-tool-section .at-dropzone{border:1.5px dashed #9db3d1;background:#f8fbff;border-radius:9px;padding:34px 20px}
+body.ufx-tool-page .at-tool-section .at-upload-icon{color:#1258f9}
+body.ufx-tool-page .at-section{background:var(--at-bg);padding-top:30px;padding-bottom:25px}
+body.ufx-tool-page .at-section h2{font-size:clamp(24px,3vw,33px);letter-spacing:-1.2px;margin-bottom:20px}
+body.ufx-tool-page .at-section .at-card{border:1px solid var(--at-border);border-radius:10px;box-shadow:none}
+body.ufx-tool-page .at-guidance-grid{gap:12px}
+body.ufx-tool-page .at-guidance-card{background:#fff}
+body.ufx-tool-page .at-guidance-label{color:var(--at-primary)}
+body.ufx-tool-page .at-hiw-step h4{font-size:15px}
+body.ufx-tool-page .at-hiw-icon{border-radius:50%;background:#e7efff!important;color:#1258f9!important}
+body.ufx-tool-page .at-hiw-arrow{color:#8aa3ca}
+body.ufx-tool-page .at-grid-5{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+body.ufx-tool-page .at-tool-card,body.ufx-tool-directory .at-tool-card{border:1px solid var(--at-border);border-radius:10px;background:#fff;box-shadow:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+body.ufx-tool-page .at-tool-card:hover,body.ufx-tool-directory .at-tool-card:hover{transform:translateY(-3px);border-color:#a8c4f9;box-shadow:0 10px 26px rgba(16,28,51,.07)}
+body.ufx-tool-page .at-tool-card h3,body.ufx-tool-directory .at-tool-card h3{font-size:15px;letter-spacing:-.25px}
+body.ufx-tool-page .at-tool-card .at-tool-cta{border:0;padding:0;text-align:left;background:transparent}
+body.ufx-tool-page .at-faq-list{gap:7px}
+body.ufx-tool-page .at-faq-item{border-radius:7px}
+body.ufx-tool-page .at-faq-q{min-height:51px}
+body.ufx-tool-page .at-footer,body.ufx-tool-directory .at-footer{background:#14212d;color:#c7d0d9}
+body.ufx-tool-page .at-footer h4,body.ufx-tool-directory .at-footer h4{color:#fff}
+body.ufx-tool-page .at-footer a,body.ufx-tool-directory .at-footer a{color:#d3dbe4}
+body.ufx-tool-page .at-footer .at-logo,body.ufx-tool-directory .at-footer .at-logo{background:#fff;padding:8px 12px;border-radius:8px;display:inline-flex}
+
+/* Category-appropriate workspaces, without changing any renderer or result data. */
+body.ufx-family-calculators .at-tool-section>.at-container>.at-tool-grid-2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+body.ufx-family-text-tools .at-tool-section .at-textarea,body.ufx-family-developer-tools .at-tool-section .at-textarea{font-family:var(--at-mono);min-height:300px}
+body.ufx-family-image-tools .at-tool-section .at-upload-zone,body.ufx-family-pdf-tools .at-tool-section .at-upload-zone,body.ufx-family-video-tools .at-tool-section .at-upload-zone,body.ufx-family-audio-tools .at-tool-section .at-upload-zone{min-height:235px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+body.ufx-family-video-tools .at-tool-section video,body.ufx-family-image-tools .at-tool-section canvas,body.ufx-family-audio-tools .at-tool-section audio{max-width:100%;border-radius:9px}
+body.ufx-family-website-tools .at-tool-section .at-output-row,body.ufx-family-developer-tools .at-tool-section .at-output-row{border-color:#dfe5ee}
+body.ufx-tool-qr-code-generator .at-qr-types{gap:7px}
+body.ufx-tool-qr-code-generator .at-qr-type{border-radius:7px}
+body.ufx-tool-qr-code-generator .at-qr-type.is-active{border-color:#1258f9;background:#edf4ff}
+body.ufx-tool-qr-code-generator .at-tool-section canvas{background:#fff;padding:16px;max-width:100%;height:auto}
+/* Dark result surfaces reproduce the approved calculator, text and QR concepts. */
+body:is(.ufx-tool-age-calculator,.ufx-tool-bmi-calculator,.ufx-tool-unit-converter,.ufx-tool-mortgage-calculator,.ufx-tool-word-counter,.ufx-tool-qr-code-generator) .at-tool-section .at-tool-grid-2>.at-card:nth-child(2){--at-text:#f7faff;--at-text-muted:#c4d1e1;--at-border:#455b78;background:#102846;border-color:#102846;color:#f7faff}
+body:is(.ufx-tool-age-calculator,.ufx-tool-bmi-calculator,.ufx-tool-unit-converter,.ufx-tool-mortgage-calculator,.ufx-tool-word-counter,.ufx-tool-qr-code-generator) .at-tool-section .at-tool-grid-2>.at-card:nth-child(2) :is(h2,h3,h4,strong,label){color:#fff}
+body:is(.ufx-tool-age-calculator,.ufx-tool-bmi-calculator,.ufx-tool-unit-converter,.ufx-tool-mortgage-calculator,.ufx-tool-word-counter,.ufx-tool-qr-code-generator) .at-tool-section .at-tool-grid-2>.at-card:nth-child(2) .at-btn-outline{background:transparent;border-color:#94a8c2;color:#fff}
+body.ufx-tool-word-counter .at-tool-section .at-stat-list li{border-color:#4b6480}
+body.ufx-tool-qr-code-generator .at-tool-section .at-tool-grid-2>.at-card:nth-child(2) canvas,body.ufx-tool-qr-code-generator .at-tool-section .at-tool-grid-2>.at-card:nth-child(2) img{background:#fff;padding:15px;border-radius:7px}
+
+/* Archive cards inherit the same surfaces and spacing as single tools. */
+body.ufx-tool-directory .at-main{color:var(--at-text)}
+body.ufx-tool-directory .at-tool-card{padding:20px}
+body.ufx-tool-directory .at-tool-card p{color:var(--at-text-muted)}
+
+body.ufx-tool-page.at-dark,body.ufx-tool-directory.at-dark{--at-bg:#111a24;--at-bg-alt:#111a24;--at-card:#192634;--at-border:#344251;--at-text:#edf2fa;--at-text-muted:#b2bfcc}
+body.ufx-tool-page.at-dark .at-tool-section .at-card,body.ufx-tool-page.at-dark .at-section .at-card,body.ufx-tool-page.at-dark .at-tool-card,body.ufx-tool-directory.at-dark .at-tool-card{background:var(--at-card)}
+body.ufx-tool-page.at-dark .at-tool-section .at-input,body.ufx-tool-page.at-dark .at-tool-section .at-textarea,body.ufx-tool-page.at-dark .at-tool-section .at-select{background:#0d1722;border-color:#46576a;color:#edf2fa}
+body.ufx-tool-page.at-dark .at-tool-section .at-upload-zone,body.ufx-tool-page.at-dark .at-tool-section .at-dropzone{background:#142335}
+body.ufx-tool-page.at-dark .at-tool-section .at-btn-outline{background:#192634;color:#edf2fa;border-color:#46576a}
+
+@media(max-width:980px){body.ufx-tool-page .at-grid-5{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.ufx-tool-title{padding:24px 0 24px}.ufx-tool-breadcrumb{margin-bottom:23px}.ufx-tool-title h1{font-size:clamp(34px,8vw,48px);letter-spacing:-1.5px}.ufx-tool-subtitle{font-size:14px}body.ufx-tool-page .at-tool-grid-2,body.ufx-family-calculators .at-tool-section>.at-container>.at-tool-grid-2{grid-template-columns:minmax(0,1fr)}body.ufx-tool-page .at-tool-section .at-card{padding:19px}body.ufx-tool-page .at-grid-5{grid-template-columns:repeat(2,minmax(0,1fr))}body.ufx-tool-page .at-section h2{font-size:25px}}
+@media(max-width:420px){body.ufx-tool-page .at-grid-5{grid-template-columns:1fr}.ufx-tool-title h1{font-size:34px}}

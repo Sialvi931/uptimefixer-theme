@@ -1,0 +1,28 @@
+/* Uptime Fixer admin styles */
+.at-admin { max-width: 1000px; }
+.at-admin-title { display: flex; align-items: center; gap: 14px; font-size: 24px; margin-bottom: 20px; }
+.at-admin-logo {
+    font-weight: 800;
+    font-size: 18px;
+    color: #1F2937;
+    background: #DBEAFE;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+.at-admin-logo span { color: #2563EB; }
+.at-admin-form .form-table th { width: 200px; padding: 16px 0; }
+.at-admin-form input[type=color] { width: 60px; height: 36px; padding: 0; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; }
+.at-import-box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 28px;
+    margin-top: 20px;
+    max-width: 720px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+.at-import-box h2 { font-size: 20px; margin: 0 0 14px; color: #2563EB; }
+.at-import-box p, .at-import-box li { font-size: 14px; line-height: 1.6; }
+.at-import-box ul { margin: 16px 0; padding-left: 0; list-style: none; }
+.at-import-box ul li { padding: 6px 0; color: #374151; }
+.button-hero { font-size: 16px !important; padding: 12px 28px !important; height: auto !important; }
