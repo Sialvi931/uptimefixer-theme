@@ -29,8 +29,8 @@ while ( have_posts() ) : the_post();
                 <p>Tools are tested against representative inputs before they are added to the public directory. Pages that still need testing or original guidance remain available for development but are excluded from search indexes and sitemaps. Articles are published publicly only after an editor marks them as fact-checked.</p>
                 <h2>Built by DigiPlex Creations</h2>
                 <p>Uptime Fixer is a product of <a href="https://digiplexcreations.org.uk/" target="_blank" rel="noopener">DigiPlex Creations</a>, a UK-based web development studio passionate about building clean, user-first digital products.</p>
-                <h2>What's Next</h2>
-                <p>We're constantly expanding the toolbox — PDF tools, colour utilities, unit converters, and more are on the way. Have an idea? <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Reach out</a>.</p>
+                <h2>What we maintain</h2>
+                <p>We regularly review the tool collection, fix broken workflows, improve guidance, and refine pages based on real usage and search feedback. If you notice a problem or have a useful suggestion, <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">send us a message</a>.</p>
                 <?php if ( get_the_content() ) the_content(); ?>
             </div>
             <aside class="at-prose-aside">
