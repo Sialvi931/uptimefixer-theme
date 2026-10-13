@@ -1,0 +1,53 @@
+{
+  "version": "2026-10-13.1",
+  "enabled": true,
+  "global_css": "/* UptimeFixer remote safe overrides */\n.ufx-safe-footer,\n.ufx-safe-footer * { box-sizing: border-box; }\n.ufx-safe-footer {\n  background: #10202d;\n  color: #f7fbff;\n  font-family: inherit;\n  border-top: 1px solid rgba(255,255,255,.08);\n}\n.ufx-safe-footer__inner {\n  width: min(1280px, calc(100% - 48px));\n  margin: 0 auto;\n  padding: 64px 0 22px;\n}\n.ufx-safe-footer__main {\n  display: grid;\n  grid-template-columns: minmax(320px, 1.15fr) minmax(520px, 1.85fr);\n  gap: 72px;\n  align-items: start;\n}\n.ufx-safe-footer__brand { max-width: 430px; }\n.ufx-safe-footer__logo {\n  display: inline-flex;\n  align-items: center;\n  justify-content: flex-start;\n  min-height: 64px;\n  margin-bottom: 30px;\n  text-decoration: none;\n}\n.ufx-safe-footer__logo img {\n  display: block;\n  width: auto;\n  max-width: 245px;\n  max-height: 72px;\n  height: auto;\n  object-fit: contain;\n  background: #fff;\n  padding: 10px 14px;\n  border-radius: 14px;\n  box-shadow: 0 10px 30px rgba(0,0,0,.12);\n}\n.ufx-safe-footer__eyebrow {\n  margin: 0 0 12px;\n  color: #c9f45b;\n  font-size: 12px;\n  line-height: 1.2;\n  font-weight: 700;\n  letter-spacing: .14em;\n}\n.ufx-safe-footer__brand h2 {\n  margin: 0;\n  color: #fff;\n  font-size: clamp(38px, 4vw, 58px);\n  line-height: .98;\n  letter-spacing: -.045em;\n  font-weight: 700;\n}\n.ufx-safe-footer__brand h2 span { color: #d9f78f; }\n.ufx-safe-footer__intro {\n  max-width: 390px;\n  margin: 24px 0 0;\n  color: rgba(237,244,250,.72);\n  font-size: 17px;\n  line-height: 1.7;\n}\n.ufx-safe-footer__cta {\n  display: inline-flex;\n  align-items: center;\n  gap: 12px;\n  margin-top: 28px;\n  padding: 13px 18px;\n  border-radius: 999px;\n  background: #c9f45b;\n  color: #10202d !important;\n  text-decoration: none !important;\n  font-size: 14px;\n  font-weight: 700;\n  transition: transform .2s ease, background .2s ease;\n}\n.ufx-safe-footer__cta:hover { transform: translateY(-2px); background: #d7fb73; }\n.ufx-safe-footer__nav {\n  display: grid;\n  grid-template-columns: 1.2fr .9fr .9fr;\n  gap: 46px;\n}\n.ufx-safe-footer__nav section { min-width: 0; }\n.ufx-safe-footer__nav h3 {\n  margin: 7px 0 20px;\n  color: #fff;\n  font-size: 14px;\n  line-height: 1.2;\n  font-weight: 700;\n  letter-spacing: .08em;\n  text-transform: uppercase;\n}\n.ufx-safe-footer__nav ul { list-style: none; margin: 0; padding: 0; }\n.ufx-safe-footer__nav li { margin: 0 0 13px; }\n.ufx-safe-footer__nav a {\n  color: rgba(235,242,248,.74);\n  text-decoration: none;\n  font-size: 15px;\n  line-height: 1.45;\n  transition: color .18s ease;\n}\n.ufx-safe-footer__nav a:hover { color: #c9f45b; }\n.ufx-safe-footer__bottom {\n  display: grid;\n  grid-template-columns: 1fr auto 1fr;\n  gap: 24px;\n  align-items: center;\n  margin-top: 54px;\n  padding-top: 20px;\n  border-top: 1px solid rgba(255,255,255,.10);\n}\n.ufx-safe-footer__bottom p {\n  margin: 0;\n  color: rgba(231,239,246,.62);\n  font-size: 13px;\n  line-height: 1.5;\n}\n.ufx-safe-footer__bottom p:nth-child(2) { text-align: center; }\n.ufx-safe-footer__bottom p:last-child { text-align: right; }\n.ufx-safe-footer__bottom a { color: #6ba5ff; text-decoration: none; font-weight: 600; }\n.ufx-safe-footer__bottom a:hover { color: #c9f45b; }\n.ufx-safe-footer__heart { color: #ff5b64; }\n@media (max-width: 1050px) {\n  .ufx-safe-footer__main { grid-template-columns: 1fr; gap: 48px; }\n  .ufx-safe-footer__brand { max-width: 640px; }\n  .ufx-safe-footer__nav { grid-template-columns: repeat(3,1fr); }\n  .ufx-safe-footer__bottom { grid-template-columns: 1fr; gap: 8px; }\n  .ufx-safe-footer__bottom p,\n  .ufx-safe-footer__bottom p:nth-child(2),\n  .ufx-safe-footer__bottom p:last-child { text-align: left; }\n}\n@media (max-width: 680px) {\n  .ufx-safe-footer__inner { width: min(100% - 32px, 1280px); padding-top: 48px; }\n  .ufx-safe-footer__main { gap: 38px; }\n  .ufx-safe-footer__nav { grid-template-columns: 1fr 1fr; gap: 32px 24px; }\n  .ufx-safe-footer__nav section:first-child { grid-column: 1 / -1; }\n  .ufx-safe-footer__nav section:first-child ul { columns: 2; column-gap: 28px; }\n  .ufx-safe-footer__brand h2 { font-size: 40px; }\n  .ufx-safe-footer__intro { font-size: 16px; }\n  .ufx-safe-footer__logo img { max-width: 215px; }\n  .ufx-safe-footer__bottom { margin-top: 42px; }\n}\n@media (max-width: 420px) {\n  .ufx-safe-footer__nav { grid-template-columns: 1fr; }\n  .ufx-safe-footer__nav section:first-child { grid-column: auto; }\n  .ufx-safe-footer__nav section:first-child ul { columns: 1; }\n}",
+  "footer": {
+    "enabled": true,
+    "match_class": "at-footer",
+    "html": "<footer class=\"ufx-safe-footer\" role=\"contentinfo\">\n<div class=\"ufx-safe-footer__inner\">\n  <div class=\"ufx-safe-footer__main\">\n    <div class=\"ufx-safe-footer__brand\">\n      <a class=\"ufx-safe-footer__logo\" href=\"{{home_url}}\" aria-label=\"{{site_name}} home\">{{site_logo}}</a>\n      <p class=\"ufx-safe-footer__eyebrow\">FREE ONLINE TOOLS</p>\n      <h2>Less busywork.<br><span>More possibilities.</span></h2>\n      <p class=\"ufx-safe-footer__intro\">Fast, practical tools for files, websites, text, media and everyday tasks — built to help you get useful work done with less friction.</p>\n      <a class=\"ufx-safe-footer__cta\" href=\"{{all_tools_url}}\">Explore all tools <span aria-hidden=\"true\">↗</span></a>\n    </div>\n    <div class=\"ufx-safe-footer__nav\">\n      <section><h3>Tools</h3>{{tool_links}}</section>\n      <section><h3>Resources</h3><ul><li><a href=\"{{all_tools_url}}\">All tools</a></li><li><a href=\"{{home_url}}#categories\">Collections</a></li><li><a href=\"{{blog_url}}\">Guides</a></li><li><a href=\"{{home_url}}#studio-faq\">FAQs</a></li></ul></section>\n      <section><h3>Company</h3><ul><li><a href=\"{{home_url}}about/\">About</a></li><li><a href=\"{{home_url}}contact/\">Contact</a></li><li><a href=\"{{privacy_url}}\">Privacy Policy</a></li><li><a href=\"{{terms_url}}\">Terms of Use</a></li></ul></section>\n    </div>\n  </div>\n  <div class=\"ufx-safe-footer__bottom\">\n    <p>© {{year}} {{site_name}}. All rights reserved.</p>\n    <p class=\"ufx-safe-footer__note\">Useful tools. Clear privacy notes. No unnecessary clutter.</p>\n    <p>Made with <span class=\"ufx-safe-footer__heart\" aria-hidden=\"true\">♥</span> by <a href=\"https://digiplexcreations.org.uk/\" target=\"_blank\" rel=\"noopener noreferrer\">DigiPlex Creations</a></p>\n  </div>\n</div>\n</footer>"
+  },
+  "redirects": [
+    {
+      "from": "/audit-heading-structure-h1-h6-seo/",
+      "to": "/tools/heading-structure-checker/",
+      "code": 301
+    },
+    {
+      "from": "/regex-testing-guide-build-patterns/",
+      "to": "/tools/regex-tester/",
+      "code": 301
+    },
+    {
+      "from": "/purchase-order-guide-what-to-include/",
+      "to": "/tools/purchase-order-generator/",
+      "code": 301
+    },
+    {
+      "from": "/split-pdf-extract-pages/",
+      "to": "/tools/split-pdf/",
+      "code": 301
+    },
+    {
+      "from": "/decode-jwt-safely-read-claims/",
+      "to": "/tools/jwt-decoder/",
+      "code": 301
+    },
+    {
+      "from": "/linkedin-banner-size-design-tips/",
+      "to": "/tools/linkedin-banner-resizer/",
+      "code": 301
+    },
+    {
+      "from": "/page-indexability-checker-find-seo-blocking-issues/",
+      "to": "/tools/indexability-checker/",
+      "code": 301
+    },
+    {
+      "from": "/category/website-tools/",
+      "to": "/tool-category/website-tools/",
+      "code": 301
+    }
+  ],
+  "html_patches": []
+}
