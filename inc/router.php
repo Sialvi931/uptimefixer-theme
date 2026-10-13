@@ -177,6 +177,32 @@ function alltools_ensure_pages() {
 }
 
 /**
+ * Preserve SEO value from legacy guide URLs by redirecting them to the
+ * closest live canonical tool. Keep this list intentionally conservative:
+ * only map URLs where the replacement intent is an exact match.
+ */
+add_action( 'template_redirect', 'alltools_legacy_seo_redirects', 0 );
+function alltools_legacy_seo_redirects() {
+    if ( is_admin() ) return;
+
+    $path = trim( (string) wp_parse_url( isset( $_SERVER['REQUEST_URI'] ) ? wp_unslash( $_SERVER['REQUEST_URI'] ) : '', PHP_URL_PATH ), '/' );
+    if ( '' === $path ) return;
+
+    $redirects = array(
+        'audit-heading-structure-h1-h6-seo' => '/tools/heading-structure-checker/',
+        'regex-testing-guide-build-patterns' => '/tools/regex-tester/',
+        'purchase-order-guide-what-to-include' => '/tools/purchase-order-generator/',
+        'split-pdf-extract-pages' => '/tools/split-pdf/',
+        'decode-jwt-safely-read-claims' => '/tools/jwt-decoder/',
+    );
+
+    if ( isset( $redirects[ $path ] ) ) {
+        wp_safe_redirect( home_url( $redirects[ $path ] ), 301, 'UptimeFixer SEO Recovery' );
+        exit;
+    }
+}
+
+/**
  * Fallback router: if a tool URL is hit via ?alltool=X query param,
  * find the existing CPT post and redirect to its real permalink.
  */
