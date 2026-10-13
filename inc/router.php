@@ -194,6 +194,9 @@ function alltools_legacy_seo_redirects() {
         'purchase-order-guide-what-to-include' => '/tools/purchase-order-generator/',
         'split-pdf-extract-pages' => '/tools/split-pdf/',
         'decode-jwt-safely-read-claims' => '/tools/jwt-decoder/',
+        'linkedin-banner-size-design-tips' => '/tools/linkedin-banner-resizer/',
+        'page-indexability-checker-find-seo-blocking-issues' => '/tools/indexability-checker/',
+        'category/website-tools' => '/tool-category/website-tools/',
     );
 
     if ( isset( $redirects[ $path ] ) ) {
