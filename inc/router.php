@@ -200,6 +200,9 @@ function alltools_legacy_seo_redirects() {
     );
 
     if ( isset( $redirects[ $path ] ) ) {
+        // A restored, published guide must keep its original canonical URL.
+        // Redirect missing legacy guides only; retain the category migration.
+        if ( 'category/website-tools' !== $path && ! is_404() ) return;
         wp_safe_redirect( home_url( $redirects[ $path ] ), 301, 'UptimeFixer SEO Recovery' );
         exit;
     }
